@@ -1,0 +1,215 @@
+:root{
+    --bgDark-color : #0e0d0d;
+    --bgLight-color:rgb(206, 204, 204);
+    --header-color : white;
+    --text-color : #2CEC84;
+    --accent-color : #FA5D17;
+    --buttonText-color : #2CEC84;
+}
+*,*::after,*::-ms-ticks-before{
+    margin:0;
+    padding:0;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--bgDark-color);
+}
+
+.hPage_svg{
+    margin:0 auto;
+    padding-top:1rem;
+    display:flex;
+    justify-content: center;
+    justify-items:center;
+    height:80px;
+}
+.hPage_svg img{
+    width:120px;
+    height:60px;
+    cursor:pointer;
+}
+.hPage_svg img:hover{
+    width:130px;
+    height:65px;
+}
+
+.main_div{
+    width:50%;
+    height:300px;
+    border:1px solid green;
+    box-shadow: 0 0 10px green,8px 8px 5px 10px rgb(9, 26, 9);
+    display:flex;
+    gap:1rem;
+    color:white;
+    margin: 1rem auto;
+    margin-bottom:5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.alpha{line-height:3.5rem;
+    padding:0rem 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    font-size:30px;
+    font-weight:800;
+}
+.alpha:hover{
+    font-size:35px;
+}
+.myAlpha{color:green;font-size:40px;background-color: rgb(0, 0, 0);
+    text-align:left;border: 1px solid white;border-radius:20%;
+    box-shadow: 2px 2px 10px rgb(119, 252, 43);width:34px;text-align:center;
+    transition:all 500ms linear 200ms;
+    animation: bgColor 4000ms linear;}
+
+.myAlpha:hover{
+    font-size:40px;
+    background-color: rgb(245, 0, 0);
+}
+@keyframes bgColor {
+    0%{background-color: black;}
+    10%{background-color: rgb(184, 183, 183);}
+    100%{background-color: black;}
+}
+.one{
+    transform:translateY(300px);
+    animation:oneAnim 3000ms ease-in-out forwards;
+}
+.two{
+    transform:translateY(300px);
+    animation:twoAnim 3200ms ease-in-out forwards;
+}
+.three{
+    transform:translateY(300px);
+    animation:threeAnim 3400ms ease-in-out forwards;
+}
+.four{
+    transform:translateY(300px);
+    animation:fourAnim 3600ms ease-in-out forwards;
+}
+.five{
+    transform:translateY(300px);
+    animation:fiveAnim 3800ms ease-in-out forwards;
+}
+.six{
+    transform:translateY(300px);
+    animation:sixAnim 4000ms ease-in-out forwards;
+}
+@keyframes oneAnim {
+    75%{transform:translateY(-300px);}
+    100%{transform:translateY(0px);}
+}
+@keyframes twoAnim {
+    75%{transform:translateY(-300px);}
+    100%{transform:translateY(0px);}
+}
+@keyframes threeAnim {
+    75%{transform:translateY(-300px);}
+    100%{transform:translateY(0px);}
+}
+@keyframes fourAnim {
+    75%{transform:translateY(-300px);}
+    100%{transform:translateY(0px);}
+}
+@keyframes fiveAnim {
+    75%{transform:translateY(-300px);}
+    100%{transform:translateY(0px);}
+}
+@keyframes sixAnim {
+    75%{transform:translateY(-300px);}
+    100%{transform:translateY(0px);}
+}
+
+
+.dgn,.dgn1,.dgn2{
+    position: absolute;
+    width:150px;
+    height:150px;
+    border:3px solid green;
+    border-radius: 50%;
+    z-index: -1;
+}
+.dgn{
+    top:1%;
+    left:1%;
+    border:10px solid green;
+    outline: 10px solid rgb(255, 255, 255);
+    outline-offset: -25px;
+    filter:blur(15px);
+    animation: dgnAnim 3000ms linear alternate-reverse infinite;
+}
+.dgn1{
+    right:1%;
+    bottom:1%;
+    border:10px solid green;
+    outline: 10px solid rgb(255, 255, 255);
+    outline-offset: -25px;
+    filter:blur(15px);
+    animation : dgnAnim 3000ms linear alternate-reverse infinite
+}
+@keyframes dgnAnim{
+    25%{border:10px solid rgb(69, 247, 69);
+        outline: 10px solid rgb(88, 88, 88);}
+    50%{border:10px solid rgb(0, 235, 78);
+        outline: 10px solid rgb(0, 0, 0);}
+    75%{border:10px solid rgb(75, 255, 4);
+        outline: 10px solid rgb(165, 165, 165);}
+}
+.dgn2{
+    width:300px;
+    height:300px;
+    top:22%;
+    left:28%;
+    filter:blur(8px);
+    animation:dgn2Anim 3000ms linear alternate-reverse infinite;
+}
+@keyframes dgn2Anim {
+    0%{left:28%;}
+    100%{left:50%;}
+}
+
+.alpha_con{
+    width:300px;
+    height:180px;
+    border:1px solid rgb(43, 255, 0);
+    position: absolute;
+    background-color: white;
+    z-index : 10;
+    overflow: hidden;
+    display:none;
+}
+.hamburg{
+    margin:0.2rem auto;
+    padding-top:0.5rem;
+    width:30px;
+    height:20px;   
+    float: right;
+    cursor:pointer;
+}
+.ham1,.ham2{
+    width:20px;
+    height:2px;
+    background-color: #0e0d0d;
+    border-radius: 10%;
+}
+.ham1{
+    transform:rotate(45deg);
+    position: relative;
+    top:0.14rem;
+    bottom:0.1rem;
+    background-color: green;
+}
+.ham2{
+    transform:rotate(-45deg)
+}
+.contents{
+    margin:0 auto;
+}
+.contents p{
+    padding:0.8rem;
+    padding-top:1.4rem;
+    font-size: 1.1rem;
+    line-height:1.2rem;
+}

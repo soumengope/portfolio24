@@ -1,0 +1,51 @@
+:root{
+    --bg-Darkcolor : #302e2e;
+    --bg-Lightcolor : #ffffff;
+    --header-color : Black;
+    --text-color : black;
+    --accent-color:rgb(219, 170, 9);
+    --buttonText-color : #ffffff;
+}
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: var(--bg-Lightcolor);
+    
+}
+
+/* Testing layouts start/begin */
+
+.divCheck{
+    display:none;
+    gap:1rem;
+    flex-basis: 100;
+    color:white;
+    margin-bottom:5rem;
+}
+.divCheck div{
+    height:200px;
+    width:100%;
+    text-align: center;
+}
+.first{
+    background-color: rgb(190, 2, 2);
+}
+.second{
+    background-color: rgb(6, 73, 161);
+}
+.third{
+    background-color: rgb(18, 153, 18);
+}
+.four{
+    background-color: purple;
+}
+.last{
+    background-color: rgb(219, 170, 9);
+}
+/* Testing layouts ends */
+
+
+/* Begining Website Making Process */
+
+
